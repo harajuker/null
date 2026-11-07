@@ -259,21 +259,6 @@ const markup = String.raw`
       </div>
     </section>
 
-    <!-- 6. FULL-BLEED FEATURE BANNER -->
-    <section class="section fp-section s-banner" data-anchor="feature">
-      <div class="s-hero__media" style="background-image:url('https://images.unsplash.com/photo-1574169208507-84376144848b?auto=format&fit=crop&w=2400&q=80')"></div>
-      <div class="s-hero__shade s-hero__shade--side"></div>
-      <div class="container">
-        <div class="banner-text">
-          <p class="label">Feature</p>
-          <h2 class="display display--md">00 Lorem Meditations</h2>
-          <p class="deck">A Placeholder Production</p>
-          <p class="body">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione.</p>
-          <a href="#" class="btn btn--light">Open Feature</a>
-        </div>
-      </div>
-    </section>
-
     <!-- 7. PODCAST + NEWSLETTER -->
     <section class="section fp-section s-subscribe theme-cream" data-anchor="subscribe">
       <div class="container subscribe-grid">
@@ -383,10 +368,10 @@ const init = (window: any) => {
   /* ---------------- fullPage.js ---------------- */
   $('#fullpage').fullpage({
     sectionSelector: '.section',
-    anchors: ['home', 'about', 'volume', 'stories', 'engage', 'feature', 'subscribe', 'footer'],
+    anchors: ['home', 'about', 'volume', 'stories', 'engage', 'subscribe', 'footer'],
     navigation: true,
     navigationPosition: 'right',
-    navigationTooltips: ['Home', 'About', 'Volume', 'Stories', 'Engage', 'Feature', 'Subscribe', 'Footer'],
+    navigationTooltips: ['Home', 'About', 'Volume', 'Stories', 'Engage', 'Subscribe', 'Footer'],
     css3: true,
     scrollingSpeed: 900,
     easingcss3: 'cubic-bezier(.22,.61,.36,1)',
